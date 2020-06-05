@@ -98,6 +98,8 @@
   #include "ramps/pins_K8200.h"                 // ATmega1280, ATmega2560                 env:mega1280 env:mega2560 (3DRAG)
 #elif MB(K8400)
   #include "ramps/pins_K8400.h"                 // ATmega1280, ATmega2560                 env:mega1280 env:mega2560 (3DRAG)
+#elif MB(K8600)
+  #include "ramps/pins_K8600.h"                 // ATmega1280, ATmega2560                 env:mega1280 env:mega2560
 #elif MB(K8800)
   #include "ramps/pins_K8800.h"                 // ATmega1280, ATmega2560                 env:mega1280 env:mega2560 (3DRAG)
 #elif MB(BAM_DICE)
@@ -190,6 +192,8 @@
   #include "ramps/pins_MKS_GEN_L_V2.h"          // ATmega2560                             env:mega2560
 #elif MB(COPYMASTER_3D)
   #include "ramps/pins_COPYMASTER_3D.h"         // ATmega2560                             env:mega2560
+#elif MB(ORTUR_4)
+  #include "ramps/pins_ORTUR_4.h"               // ATmega2560                             env:mega2560
 
 //
 // RAMBo and derivatives
@@ -280,6 +284,8 @@
   #include "sanguino/pins_SANGUINOLOLU_12.h"    // ATmega644P, ATmega1284P                env:sanguino644p env:sanguino1284p
 #elif MB(MELZI)
   #include "sanguino/pins_MELZI.h"              // ATmega644P, ATmega1284P                env:sanguino644p env:sanguino1284p
+#elif MB(MELZI_V2)
+  #include "sanguino/pins_MELZI_V2.h"           // ATmega644P, ATmega1284P                env:sanguino644p env:sanguino1284p
 #elif MB(MELZI_MAKR3D)
   #include "sanguino/pins_MELZI_MAKR3D.h"       // ATmega644P, ATmega1284P                env:sanguino644p env:sanguino1284p
 #elif MB(MELZI_CREALITY)
@@ -467,6 +473,8 @@
 //
 // STM32 ARM Cortex-M0
 //
+#elif MB(MALYAN_M200_V2)
+  #include "stm32f0/pins_MALYAN_M200_V2.h"      // STM32F0                                env:STM32F070RB_malyan
 #elif MB(MALYAN_M300)
   #include "stm32f0/pins_MALYAN_M300.h"         // STM32F070                              env:malyan_M300
 
@@ -506,6 +514,8 @@
   #include "stm32f1/pins_BTT_SKR_MINI_E3_V1_0.h"  // STM32F1                              env:STM32F103RC_btt env:STM32F103RC_btt_512K env:STM32F103RC_btt_USB env:STM32F103RC_btt_512K_USB
 #elif MB(BTT_SKR_MINI_E3_V1_2)
   #include "stm32f1/pins_BTT_SKR_MINI_E3_V1_2.h"  // STM32F1                              env:STM32F103RC_btt env:STM32F103RC_btt_512K env:STM32F103RC_btt_USB env:STM32F103RC_btt_512K_USB
+#elif MB(BTT_SKR_MINI_E3_V2_0)
+  #include "stm32f1/pins_BTT_SKR_MINI_E3_V2_0.h"  // STM32F1                              env:STM32F103RC_btt env:STM32F103RC_btt_512K env:STM32F103RC_btt_USB env:STM32F103RC_btt_512K_USB
 #elif MB(BTT_SKR_E3_DIP)
   #include "stm32f1/pins_BTT_SKR_E3_DIP.h"      // STM32F1                                env:STM32F103RE_btt env:STM32F103RE_btt_USB env:STM32F103RC_btt env:STM32F103RC_btt_512K env:STM32F103RC_btt_USB env:STM32F103RC_btt_512K_USB
 #elif MB(JGAURORA_A5S_A1)
@@ -526,6 +536,8 @@
   #include "stm32f1/pins_MKS_ROBIN_E3D.h"       // STM32F1                                env:mks_robin_e3
 #elif MB(MKS_ROBIN_E3)
   #include "stm32f1/pins_MKS_ROBIN_E3.h"        // STM32F1                                env:mks_robin_e3
+#elif MB(CCROBOT_MEEB_3DP)
+  #include "stm32f1/pins_CCROBOT_MEEB_3DP.h"    // STM32F1                                env:STM32F103RC_meeb
 
 //
 // ARM Cortex-M4F
